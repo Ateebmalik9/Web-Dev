@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="prime"> </p>
+    <script>
+        var num=Number(prompt("Enter a number"));
+        prime(num);
+        function prime(num){
+            if(num<=1)
+                document.getElementById("prime").innerHTML= num + " is not a prime number"
+            else{
+                let flag=0;
+                for(let i=2;i<num;i++)
+                {  
+                    if(num%i===0){
+                      flag=1;
+                     break;
+                    }
+                }
+                if(flag==0)
+                {
+                    document.getElementById("prime").innerHTML= num + " is a prime number"
+                }
+                else
+                {
+                    document.getElementById("prime").innerHTML= num + " is not a prime number"
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
