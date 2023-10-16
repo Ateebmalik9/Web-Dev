@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Biggest elements of an array</h1>
+    <script>
+
+        var a = [10,1,5,28,0]
+        n=a.length
+        
+        var max=a[0];
+        for(i=0;i<n;i++)
+        {
+            if(max<a[i])
+            {
+                max=a[i];
+            }
+        }
+
+        document.write("Max is "+max);
+
+    </script>
+</body>
+</html>
