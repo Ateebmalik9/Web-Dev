@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            table,th,td{
+                border-collapse: collapse;
+                border: 2px solid red;
+                text-align: center;
+                padding: 10px;
+                margin: 50px; 
+            }
+            
+        
+    </style>
+    
+</head>
+<body>
+    <h1>Fibonacci series</h1>
+ 
+        <script>
+            document.write("<table>")
+            document.write("<tr>");
+            document.write("<th> Fibonacci series </th>");
+            document.write("</tr>");
+
+            fib1=0;
+            fib2=1;
+            n=Number(prompt("Series length"));
+            document.write("<tr>");
+            document.write("<td>"+fib1+"</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>"+fib2+"</td>");
+            document.write("</tr>");
+        
+            for(i=0;i<n-2;i++)
+            {
+                fib3=fib1+fib2;
+                document.write("<tr>");
+                document.write("<td>"+fib3+"</td>");
+                document.write("</tr>");
+
+                fib1=fib2;
+                fib2=fib3;
+            }
+        
+            document.write("</table>")
+        </script>
+        
+</body>
+</html>
