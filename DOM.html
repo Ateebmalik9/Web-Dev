@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click here to display paragraph tag </button><br>
+    <button id="b1" onclick=cc() hidden="true">turn red</button>
+    <button id="b2" onclick="clr()" hidden="true">change background</button>
+    <p id="p1"> </p>
+    <script>
+        function fun()
+        {
+            document.getElementById('p1').innerHTML="This is First paragraph"
+            document.getElementById('b1').hidden=false
+            document.getElementById('b2').hidden=false
+        }
+        function cc()
+        {
+            document.getElementById('p1').style.color='red'
+           
+        }
+        function clr()
+        {
+            document.getElementById('p1').style.backgroundColor='yellow'
+        }
+    
+    </script>
+</body>
+</html>
