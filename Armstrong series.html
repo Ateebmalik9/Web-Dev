@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border-collapse: collapse;
+            border: 2px solid red;
+            padding: 10px;
+            margin-left: 100px;
+           color: brown;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Armstrong series</th>
+        </tr>
+        <script>
+            for(i=1;i<1000;i++){
+                let num=i;
+                let sum=0;
+                while(num>0)
+                {
+                    r=num%10;
+                    r=r**3;
+                    sum=sum+r;
+                    num=parseInt(num/10);
+
+                }
+                if(sum==i)
+                {
+                    document.write("<tr>")
+                        document.write("<td>"+i+"</td>")    
+                    document.write("</tr>")
+                }
+
+
+            }
+
+        </script>
+    </table>
+
+</body>
+</html>
